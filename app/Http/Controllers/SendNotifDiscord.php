@@ -16,10 +16,10 @@ class SendNotifDiscord extends Controller
     public function __invoke(Request $request)
     {
         return Http::post(config('notification.discord.hook_url'),[
-            'content'   => "Learning how to send notifications from laravel to discord",
+            'content'   => "Aku Ganteng",
             'embeds'    => [
                 [
-                    'title' => 'An Awesome',
+                    'title' => 'An Awesome Boy',
                     'description' => 'Discord webhooks are great',
                     'color' => '7506394'
                 ]
