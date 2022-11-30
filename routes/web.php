@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\SendNotifDiscord;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,6 +16,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    Log::emergency("Ini dari welcome", [
+        'app' => 'gabut',
+        'url' => 'xxpaks',
+        'error' => 'lorem'
+    ]);
     return view('welcome');
 });
 Route::get('/send-discord',SendNotifDiscord::class);

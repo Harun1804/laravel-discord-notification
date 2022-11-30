@@ -185,6 +185,7 @@ return [
         /*
          * Package Service Providers...
          */
+        MarvinLabs\DiscordLogger\ServiceProvider::class,
 
         /*
          * Application Service Providers...
