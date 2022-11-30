@@ -16,11 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    Log::emergency("Ini dari welcome", [
-        'app' => 'gabut',
-        'url' => 'xxpaks',
-        'error' => 'lorem'
-    ]);
+    Log::notice("Ini dari welcome");
     return view('welcome');
 });
 Route::get('/send-discord',SendNotifDiscord::class);

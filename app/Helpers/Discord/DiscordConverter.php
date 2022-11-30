@@ -20,7 +20,7 @@ class DiscordConverter
     {
         $mainMessage = Message::make();
         $message = $this->addMainEmbed($mainMessage, $record);
-        $message = $this->addContextEmbed($mainMessage, $record);
+        // $message = $this->addContextEmbed($mainMessage, $record);
 
         return $message;
     }
