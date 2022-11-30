@@ -1,6 +1,7 @@
 <?php
 
 use App\Helpers\Discord\DiscordLog;
+use App\Helpers\Discord\DiscordLogger;
 use Monolog\Handler\NullHandler;
 use Monolog\Handler\StreamHandler;
 use Monolog\Handler\SyslogUdpHandler;
@@ -121,7 +122,8 @@ return [
 
         'discord' => [
             'driver'    => 'custom',
-            'via'       => MarvinLabs\DiscordLogger\Logger::class,
+            // 'via'       => MarvinLabs\DiscordLogger\Logger::class,
+            'via'       => DiscordLogger::class,
             'level'     => env('LOG_LEVEL', 'debug'),
             'url'       => env('DISCORD_WEB_HOOK')
         ],
