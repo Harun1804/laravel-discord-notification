@@ -97,6 +97,7 @@ class BlogController extends Controller
     {
         DB::beginTransaction();
         try {
+            $this->removeImage($blog->thumbnail,'blogs');
             $blog->delete();
 
             DB::commit();
