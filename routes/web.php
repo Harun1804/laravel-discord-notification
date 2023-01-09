@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\QuoteController;
 use App\Http\Controllers\SendNotifDiscord;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Route;
@@ -20,3 +21,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/send-discord',SendNotifDiscord::class);
+
+Route::prefix('quote')->controller(QuoteController::class)->group(function(){
+    Route::get('','index')->name('quote.index');
+    Route::get('form','create')->name('quote.create');
+});
