@@ -8,7 +8,9 @@
 
                 <!-- CUSTOM BLOCKQUOTE -->
                 <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded">
-                    <div class="blockquote-custom-icon bg-info shadow-sm"><i class="fa-solid fa-quote-left text-white"></i></div>
+                    <a href="{{ route('quote.create') }}">
+                        <div class="blockquote-custom-icon bg-info shadow-sm"><i class="fa-solid fa-quote-left text-white"></i></div>
+                    </a>
                     <p class="mb-0 mt-2 font-italic">{{ ucfirst($data['quote']) }}</p>
                     <footer class="blockquote-footer pt-4 mt-4 border-top">
                         <cite title="Source Title">{{ $data['by'] }}</cite>
