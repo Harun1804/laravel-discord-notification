@@ -3,17 +3,6 @@
 @section('content')
 <section class="py-5">
     <div class="container">
-        <!-- FOR DEMO PURPOSE -->
-        <div class="row">
-            <div class="col-lg-6 mx-auto">
-                <header class="text-center pb-5">
-                    <h1 class="h2">&nbsp;</h1>
-                    <p>&nbsp;</p>
-                </header>
-            </div>
-        </div><!-- END -->
-
-
         <div class="row">
             <div class="col-lg-6 mx-auto">
 
