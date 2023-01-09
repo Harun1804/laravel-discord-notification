@@ -1,15 +1,15 @@
 @extends('quote.master')
 
 @section('content')
-<section class="py-5">
+<section>
     <div class="container">
-        <div class="row">
-            <div class="col-lg-6 mx-auto">
+        <div class="row min-vh-100 justify-content-center align-items-center">
+            <div class="col-lg-6">
 
                 <!-- CUSTOM BLOCKQUOTE -->
                 <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded">
                     <div class="blockquote-custom-icon bg-info shadow-sm"><i class="fa-solid fa-quote-left text-white"></i></div>
-                    <p class="mb-0 mt-2 font-italic">"{{ ucfirst($data['quote']) }}"</p>
+                    <p class="mb-0 mt-2 font-italic">{{ ucfirst($data['quote']) }}</p>
                     <footer class="blockquote-footer pt-4 mt-4 border-top">
                         <cite title="Source Title">{{ $data['by'] }}</cite>
                     </footer>
