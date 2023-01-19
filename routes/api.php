@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\BlogController;
+use App\Http\Controllers\Api\ScrapingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +15,7 @@ use App\Http\Controllers\Api\BlogController;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+Route::get('/web-scrap',[ScrapingController::class,'index']);
 
 Route::apiResource('blog',BlogController::class);
 
